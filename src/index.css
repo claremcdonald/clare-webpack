@@ -1,3 +1,21 @@
 body {
-  background-color: paleturquoise;
+  --color-mauve-favicon: hsl(321, 19%, 50%);
+  --color-mauve-lightest: hsl(318, 19%, 90%);
+  --color-mauve-lighter: hsl(318, 20%, 75%);
+  --color-mauve-light: hsl(320, 19%, 68%);
+  --color-mauve-neutral: hsl(332, 15%, 77%);
+  --color-mauve: hsl(319, 19%, 62%);
+  --color-mauve-dark: hsl(319, 19%, 62%);
+  --color-mauve-darker: hsl(323, 20%, 59%);
+  --color-mauve-pink: hsl(330, 24%, 74%);
+
+  background-color: hsl(319, 19%, 62%);
+}
+
+.intro-text {
+  font-size: 4rem;
+  padding: 30px;
+  text-align: center;
+  color: black;
+  border: 40px dotted var(--color-mauve-favicon);
 }

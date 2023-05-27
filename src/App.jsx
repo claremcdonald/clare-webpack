@@ -1,3 +1,3 @@
 export default function App() {
-  return <>Clare's React Webpack Template</>;
+  return <div class='intro-text'>Clare's React Webpack Template</div>;
 }
