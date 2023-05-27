@@ -6,9 +6,13 @@ module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: ['./ src / index.js'],
   output: {
+    publicPath: '/',
     clean: true,
     filename: 'app.bundle.js',
     path: __dirname + '/dist',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   module: {
     rules: [
