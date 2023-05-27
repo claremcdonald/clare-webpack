@@ -4,12 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  entry: ['./ src / index.js'],
+  entry: ['./src/index.js'],
   output: {
     publicPath: '/',
     clean: true,
     filename: 'app.bundle.js',
-    path: __dirname + '/dist',
+    path: __dirname + '/build',
   },
   devServer: {
     historyApiFallback: true,
@@ -45,8 +45,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       React: 'react',
     }),
-    new CopyPlugin({
-      patterns: [{ from: 'public', to: '.' }],
-    }),
+    // new CopyPlugin({
+    //   patterns: [{ from: 'public', to: '.' }],
+    // }),
   ],
 };
